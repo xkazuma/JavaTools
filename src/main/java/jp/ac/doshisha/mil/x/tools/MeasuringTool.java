@@ -10,8 +10,6 @@ public class MeasuringTool {
     private static Map<String, Long> endRAMs     = null;
 
     public static void measureStart(String key) {
-        Runtime.getRuntime().gc();
-
         Long startTime = System.nanoTime();
         Long startRAM  = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
