@@ -59,6 +59,10 @@ public class MeasuringTool {
         return result;
     }
 
+    public static void reset() {
+        startTimes = endTimes = null;
+    }
+
     public static void printResult(String key) {
         var extractingRPathFromHubMeasure = MeasuringTool.getResult(key);
         System.out.printf(
